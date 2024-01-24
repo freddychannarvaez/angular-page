@@ -1,0 +1,76 @@
+<mat-toolbar color="primary">
+  <!-- Top bar -->
+  <mat-toolbar-row>
+    <div>
+      <button mat-icon-button
+          (click)="sidenav.toggle()"
+          id="toggleButton">
+        <mat-icon>menu</mat-icon>
+      </button>
+    </div>
+
+    <div class="links-container">
+      <a *ngFor="let route of routes"
+        [routerLink]="route.link">
+        {{route.title}}
+      </a>
+    </div>
+  </mat-toolbar-row>
+</mat-toolbar>
+
+<mat-sidenav-container>
+  <mat-sidenav
+  mode="side" #sidenav
+  position="start" opened
+  role="navigation">
+  <mat-nav-list class="nav-list">
+    <div>
+      <span>THIS IS THE LIST</span>
+    </div>
+  
+    <!-- <div class="list-container">
+      <a mat-list-item class="list-item"
+        routerLink="/">
+        <mat-icon>note</mat-icon>
+        <span class="nav-caption">All notes</span>
+        <span></span>
+      </a>        
+      <a mat-list-item class="list-item"
+        routerLink="/">
+        <mat-icon>sunny</mat-icon>
+        <span class="nav-caption">Daily</span>
+        <span></span>
+      </a>        
+      <a *ngFor="let list of lists; index as i"
+        mat-list-item class="list-item" cdkDrag
+        (click)="onSelectList(i)">
+        <mat-icon>menu</mat-icon>
+        <span class="nav-caption">{{list.title}}</span>
+        <span></span>
+      </a>
+      <form (ngSubmit)="createList(listForm)" #listForm="ngForm">
+        <mat-form-field appearance="outline">
+          <mat-icon matIconPrefix>add</mat-icon>
+          <input matInput placeholder="Add new list..."
+            name="newList" #newList="ngModel" ngModel>
+        </mat-form-field>
+      </form>   
+    </div> -->
+  
+    <!-- No licensed code was harmed during this project -->
+    <!-- <div class="rights-reserved">
+      <span>© FreddyChanNarvaez 2023</span>
+      <span>All Rights Reserved</span>
+    </div> -->
+  </mat-nav-list>
+  
+  </mat-sidenav>
+  
+  <mat-sidenav-content>
+  
+    <main>
+     <span>first span</span>
+    </main>
+  
+  </mat-sidenav-content>
+</mat-sidenav-container>
