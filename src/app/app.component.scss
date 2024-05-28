@@ -1,3 +1,4 @@
+@import '../styles.scss';
 
 $toolbar-height: 64px;
 
@@ -30,18 +31,41 @@ mat-toolbar {
     display: flex;
     flex-direction: row;
     justify-content: space-between;
+    align-items: center;
+
+    .logo {
+      width: 104px;
+      height: $toolbar-height;
+
+      img {
+        width: 100%;
+        height: 100%;
+        object-fit: fill;
+      }
+    }
+
+    .burgerButton {
+      @media screen and (min-width: 768px) {
+        display: none;
+      }
+    }
 
     .links-container {
       display: flex;
       flex-direction: row;
       column-gap: 20px;
       align-items: center;
+
       
       a {
         font-size: 18px;
         color: white;
         text-decoration: none;
         cursor: pointer;
+
+        @media screen and (max-width: 768px) {
+          display: none;
+        }
       }
     }
   }
@@ -107,11 +131,45 @@ a {
 //   justify-content: flex-start;
 // }
 
-.rights-reserved {
-margin-top: 50px;
-color: #56768E;
-display: flex;
-flex-direction: column;
-align-items: center;
-row-gap: 10px;
+.footer {
+  background-color: $tawny;
+  position: fixed;
+  bottom: 0px;
+  height: 100px;
+  width: 100%;
+  padding: 10px;
+  box-sizing: border-box;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  align-items: center;
+  
+  .footer-row {
+    color: white;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    width: 120px;
+    // color: $naples_yellow;
+    
+    // @media screen and (max-width: 768px) {
+    //   flex-direction: column;
+    // }
+    
+    .social {
+      img {
+        width: 20px;
+        height: 20px;
+        filter: contrast(50%);
+      }
+    }
+  }
+
+  .rights-reserved {
+    font-size: 16px;
+    color: white;
+    width: 120px;
+  }
+
 }

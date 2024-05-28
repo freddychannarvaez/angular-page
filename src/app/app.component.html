@@ -1,19 +1,27 @@
 <mat-toolbar color="primary">
-  <!-- Top bar -->
   <mat-toolbar-row>
-    <div>
       <button mat-icon-button
           (click)="sidenav.toggle()"
-          id="toggleButton">
+          id="toggleButton"
+          class="burgerButton">
         <mat-icon>menu</mat-icon>
       </button>
-    </div>
+
+    <a class="logo" routerLink="/">
+      <img src="../assets/logo-white.svg">
+    </a>
 
     <div class="links-container">
-      <a *ngFor="let route of routes"
+      <a *ngFor="let route of content.routes"
         [routerLink]="route.link">
         {{route.title}}
       </a>
+
+      <button mat-icon-button [matMenuTriggerFor]="menu"><mat-icon>language</mat-icon></button>
+      <mat-menu #menu="matMenu">
+        <button mat-menu-item (click)="onSelectEnglish()">English</button>
+        <button mat-menu-item (click)="onSelectSpanish()">Español</button>
+      </mat-menu>
     </div>
   </mat-toolbar-row>
 </mat-toolbar>
@@ -21,41 +29,18 @@
 <mat-sidenav-container>
   <mat-sidenav
   mode="side" #sidenav
-  position="start" opened
+  position="start" closed
   role="navigation">
   <mat-nav-list class="nav-list">
-    <div>
-      <span>THIS IS THE LIST</span>
-    </div>
-  
-    <!-- <div class="list-container">
+    <div class="list-container">
       <a mat-list-item class="list-item"
-        routerLink="/">
-        <mat-icon>note</mat-icon>
-        <span class="nav-caption">All notes</span>
-        <span></span>
-      </a>        
-      <a mat-list-item class="list-item"
-        routerLink="/">
-        <mat-icon>sunny</mat-icon>
-        <span class="nav-caption">Daily</span>
-        <span></span>
-      </a>        
-      <a *ngFor="let list of lists; index as i"
-        mat-list-item class="list-item" cdkDrag
-        (click)="onSelectList(i)">
-        <mat-icon>menu</mat-icon>
-        <span class="nav-caption">{{list.title}}</span>
+      *ngFor="let route of content.routes"
+      [routerLink]="route.link">
+        <mat-icon>{{route.icon}}</mat-icon>
+        <span class="nav-caption">{{route.title}}</span>
         <span></span>
       </a>
-      <form (ngSubmit)="createList(listForm)" #listForm="ngForm">
-        <mat-form-field appearance="outline">
-          <mat-icon matIconPrefix>add</mat-icon>
-          <input matInput placeholder="Add new list..."
-            name="newList" #newList="ngModel" ngModel>
-        </mat-form-field>
-      </form>   
-    </div> -->
+    </div>
   
     <!-- No licensed code was harmed during this project -->
     <!-- <div class="rights-reserved">
@@ -69,8 +54,24 @@
   <mat-sidenav-content>
   
     <main>
-     <span>first span</span>
+     <router-outlet></router-outlet>
     </main>
+    <footer class="footer">
+      <div class="footer-row">
+        <span>{{content.social_networks.title}}</span>
+        <div class="social">
+          <a routerLink="/">
+            <img src="../assets/facebook.svg">
+          </a>
+          <a routerLink="/">
+            <img src="../assets/instagram.svg">
+          </a>
+        </div>
+      </div>
+      <div class="rights-reserved">
+        <span>2024 Kinil Kab</span>
+      </div>
+    </footer>
   
   </mat-sidenav-content>
 </mat-sidenav-container>
