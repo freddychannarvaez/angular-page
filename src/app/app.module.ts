@@ -9,6 +9,7 @@ import { BasicModule } from './common/basic.module';
 import { HomeComponent } from './home/home.component';
 import { TranslateService } from './common/translate.service';
 import { isPlatformBrowser } from '@angular/common';
+import { ProductComponent } from './product/product.component';
 
 export function setupTranslateFactory(
   service: TranslateService): Function {
@@ -18,7 +19,8 @@ export function setupTranslateFactory(
 @NgModule({
   declarations: [
     AppComponent,
-    HomeComponent
+    HomeComponent,
+    ProductComponent
   ],
   imports: [
     BrowserModule,
