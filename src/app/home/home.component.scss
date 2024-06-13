@@ -1,0 +1,108 @@
+$icon-size: 60px;
+
+section {
+  // background-color: transparent;
+}
+
+.hero {
+  text-align: center;
+  text-shadow: 2px 2px #000000;
+  width: 100%;
+  height: 830px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  
+  &-image {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    position: absolute;
+    z-index: 0;
+  }
+  
+  &-title {
+    font-size: 36px;
+    max-width: 700px;
+    line-height: normal;
+    color: white;
+    z-index: 1;
+  }
+  
+  &-description {
+    font-size: 16px;
+    max-width: 800px;
+    line-height: normal;
+    color: white;
+    z-index: 1;
+    padding-top: 50px;
+  }
+}
+
+.honeywave {
+  width: 100%;
+  height: 200px;
+  background-image: url('../../assets/wave.svg');
+  position: absolute;
+  bottom: -100px;
+}
+
+.honeycomb {
+  width: 100%;
+  height: 600px;
+  background-image: url('../../assets/honeycomb.svg');
+}
+
+// TODO:
+.description {
+  // width: 100%;
+  // height: 600px;
+  position: relative;
+  top: 200px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-items: start;
+
+  &-title {
+    color: black;
+    font-size: 30px;
+  }
+
+  &-items {
+    width: 100%;
+    height: auto;
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr;
+    column-gap: 20px;
+    row-gap: 20px;
+    justify-items: center;
+
+    .item {
+      width: 200px;
+      // height: 200px;
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+      justify-items: start;
+      font-size: 30px;
+      
+      .mat-icon {
+        width: $icon-size;
+        height: $icon-size;
+        font-size: $icon-size;
+      }
+    }
+  }
+}
+
+.products-grid {
+  width: 100%;
+  height: auto;
+  display: grid;
+  grid-template-columns: 1fr 1fr 1fr 1fr;
+  column-gap: 20px;
+  row-gap: 20px;
+  justify-items: center;
+}

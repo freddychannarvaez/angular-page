@@ -7,4 +7,17 @@ import { Component } from '@angular/core';
 })
 export class ProductComponent {
 
+  product: Product = {
+      src: "../../../assets/bottle.jpg", 
+      title: "lorem",
+      descrption: "lorem ipsum",
+      price: 10
+    }
+}
+
+interface Product {
+  src: string;
+  title: string;
+  descrption: string;
+  price: number;
 }

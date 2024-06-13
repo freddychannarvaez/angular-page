@@ -1,8 +1,45 @@
 <!-- Hero image -->
-<section>{{content.main.description}}</section>
+ <!-- TODO: Make carousel -->
+<section class="hero">
+    <img class="hero-image" src="../../assets/main.jpg">
+    <span class="hero-title">{{content.main.title}}</span>
+    <span class="hero-description">{{content.main.description}}</span>
+</section>
+<!-- Description-->
+<section>
+  <div class="description">
+    <span class="description-title">{{content.about_us.our_values_title}}</span>
+    <div class="description-items">
+      <!-- TODO: Draw circle for each item -->
+      <!-- After click, send to description -->
+      <div class="item">
+        <mat-icon>hive</mat-icon>
+        <span>{{content.about_us.our_values_artisanal_title}}</span>
+      </div>
+      <div class="item">
+        <mat-icon>pin_drop</mat-icon>
+        <span>{{content.about_us.our_values_local_title}}</span>
+      </div>
+      <div class="item">
+        <mat-icon>high_quality-</mat-icon>
+        <span>{{content.about_us.our_values_quality_title}}</span>
+      </div>
+    </div>
+  </div>
+  <!-- <div class="honeywave"></div> -->
+  <div class="honeycomb"></div>
+</section>
 
-<!-- Hero image -->
-<section></section>
-
-<!-- Hero image -->
-<section></section>
+<!-- Products -->
+<section>
+  <div class="products-grid">
+    <app-product class="product"></app-product>
+    <app-product class="product"></app-product>
+    <app-product class="product"></app-product>
+    <app-product class="product"></app-product>
+    <app-product class="product"></app-product>
+    <app-product class="product"></app-product>
+    <app-product class="product"></app-product>
+    <app-product class="product"></app-product>
+  </div>
+</section>
