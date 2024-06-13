@@ -5,10 +5,18 @@ export const content = {
     {title: 'Contacto', link: '/contact', icon: 'contact_page'},
   ],
   main: {
-    description: `Welcome to Kinil Kab, your one-stop destination for all things honey! Whether you are a honey enthusiast, a health-conscious consumer, or simply someone with a sweet tooth, you'll find everything you need right here. Browse our wide selection of pure, raw honey varieties, each with its own unique flavor profile and nutritional benefits. From classic clover honey to exotic wildflower blends, we have something to satisfy every palate. Plus, explore our collection of beeswax candles, skincare products, and other bee-inspired goodies. Shop now and experience the pure bliss of Kinil Kab.`
+    title: `¡Bienvenido a Kinil Kab, tu destino único para todo lo relacionado con la miel!`,
+    description: `Si es un entusiasta de la miel, un consumidor preocupado por su salud o simplemente alguien goloso, aquí encontrará todo lo que necesita. Explore nuestra amplia selección de variedades de miel pura y cruda, cada una con su propio perfil de sabor y beneficios nutricionales únicos. Desde la clásica miel de trébol hasta las exóticas mezclas de flores silvestres, tenemos algo para satisfacer todos los paladares. Además, explore nuestra colección de velas de cera de abejas, productos para el cuidado de la piel y otras delicias inspiradas en las abejas. Compre ahora y experimente la pura felicidad de Kinil Kab.`
   },
   about_us: {
-    description: `At Kinil Kab, we are dedicated to bringing you the purest, most delicious honey straight from our hives to your table. Nestled in the heart of pristine meadows, our beekeepers work tirelessly to ensure that every jar of honey is bursting with the goodness of nature. With a commitment to sustainability and ethical beekeeping practices, we strive to protect and nurture our precious pollinators while delivering unmatched quality to our customers.`
+    description: `At Kinil Kab, we are dedicated to bringing you the purest, most delicious honey straight from our hives to your table. Nestled in the heart of pristine meadows, our beekeepers work tirelessly to ensure that every jar of honey is bursting with the goodness of nature. With a commitment to sustainability and ethical beekeeping practices, we strive to protect and nurture our precious pollinators while delivering unmatched quality to our customers.`,
+    our_values_title: `Nuestros valores`,
+    our_values_artisanal_title: `Artesanal`,
+    our_values_artisanal_description: `Artesanal`,
+    our_values_local_title: `Local`,
+    our_values_local_description: `Local`,
+    our_values_quality_title: `Calidad`,
+    our_values_quality_description: `Calidad`,
   },
   products: {
     raw_honey: `Indulge in the pure goodness of our raw honey, harvested straight from the hive without any processing or additives. Choose from a variety of floral sources and taste the difference of 100% natural sweetness.`,
