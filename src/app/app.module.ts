@@ -6,10 +6,20 @@ import { AppComponent } from './app.component';
 import { BrowserAnimationsModule } from '@angular/platform-browser/animations';
 // import { HttpClientModule } from '@angular/common/http';
 import { BasicModule } from './common/basic.module';
+import { CarouselComponent } from './carousel/carousel.component';
+import { BrandsComponent } from './brands/brands.component';
+import { ServicesComponent } from './services/services.component';
+import { ProductsComponent } from './products/products.component';
+import { ContactComponent } from './contact/contact.component';
 
 @NgModule({
   declarations: [
-    AppComponent
+    AppComponent,
+    CarouselComponent,
+    BrandsComponent,
+    ServicesComponent,
+    ProductsComponent,
+    ContactComponent
   ],
   imports: [
     BrowserModule,
