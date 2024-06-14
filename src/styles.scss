@@ -1,3 +1,142 @@
+// @use '@angular/material' as mat;
+
+// @include mat.core();
 /* You can add global styles to this file, and also import other style files */
 html, body { height: 100%; }
 body { margin: 0; font-family: Roboto, "Helvetica Neue", sans-serif; }
+
+/* Primary colors */
+$msa_blue: #00263c;
+$msa_blue_lighter: #007fc8; // contrast also
+$msa_blue_darker: #002032;
+$msa_blue_complementary: #492204;
+
+$msa_orange: #fc7d1c;
+$msa_orange_lighter: #ff8d36;
+$msa_orange_darker: #af520a;
+$msa_orange_contrast: #00e28b;
+$msa_orange_complementary: #10a8ff;
+
+/*----------------------------------------------------------------------------*/
+// Material Theme
+/*----------------------------------------------------------------------------*/
+@import '@angular/material/theming';
+// @import 'sal.js/dist/sal.css';
+// @import "~@angular/material/prebuilt-themes/indigo-pink.css";
+
+// Plus imports for other components in your app.
+
+// Include the common styles for Angular Material. We include this here so that you only
+// have to load a single css file for Angular Material in your app.
+// Be sure that you only ever include this mixin once!
+// @include mat-core();
+
+
+// Define the palettes for your theme using the Material Design palettes available in palette.scss
+// (imported above). For each palette, you can optionally specify a default, lighter, and darker
+// hue.
+// $candy-app-primary: mat-palette($mat-indigo, A700);
+// $candy-app-accent:  mat-palette($mat-pink, A200, A100, A400);
+
+@import url('https://fonts.googleapis.com/css?family=Roboto'); // Roboto font
+
+$mat-blue: (
+  50: $msa_blue,
+  100: $msa_blue,
+  200: $msa_blue,
+  300: $msa_blue,
+  400: $msa_blue,
+  500: $msa_blue,
+  600: $msa_blue,
+  700: $msa_blue,
+  800: $msa_blue,
+  900: $msa_blue,
+  A100: $msa_blue_lighter,// Lighter
+  A200: $msa_blue,
+  A400: $msa_blue_darker, // Darker
+  A700: $msa_blue,
+  contrast: (
+    50: red,
+    100: red,
+    200: red,
+    300: red,
+    400: red,
+    500: red,
+    600: red,
+    700: red,
+    800: red,
+    900: red,
+    A100: red,
+    A200: red,
+    A400: red,
+    A700: red,
+  )
+//   contrast: (
+//     50: $msa_blue_complementary,
+//     100: $msa_blue_complementary,
+//     200: $msa_blue_complementary,
+//     300: $msa_blue_lighter,
+//     400: $msa_blue_lighter,
+//     500: $msa_blue_lighter,
+//     600: $msa_blue_lighter,
+//     700: $msa_blue_lighter,
+//     800: $msa_blue_lighter,
+//     900: $msa_blue_lighter,
+//     A100: $msa_blue_complementary,
+//     A200: $msa_blue_lighter,
+//     A400: $msa_blue_lighter,
+//     A700: $msa_blue_lighter,
+//   )
+);
+
+$mat-orange: (
+  50: $msa_orange,
+  100: $msa_orange,
+  200: $msa_orange,
+  300: $msa_orange,
+  400: $msa_orange,
+  500: $msa_orange,
+  600: $msa_orange,
+  700: $msa_orange,
+  800: $msa_orange,
+  900: $msa_orange,
+  A100: $msa_orange_lighter, // Lighter
+  A200: $msa_orange,
+  A400: $msa_orange_darker, // Darker
+  A700: $msa_orange,
+  contrast: (
+    50: black,
+    100: black,
+    200: black,
+    300: white,
+    400: white,
+    500: black,
+    600: black,
+    700: black,
+    800: white,
+    900: white,
+    A100: black,
+    A200: white,
+    A400: white,
+    A700: black,
+  )
+);
+
+$candy-app-primary: mat-palette($mat-blue, A200, A100, A400);
+$candy-app-accent:  mat-palette($mat-orange, A200, A100, A400);
+
+// The warn palette is optional (defaults to red).
+$candy-app-warn:    mat-palette($mat-red);
+
+// Create the theme object (a Sass map containing all of the palettes).
+$candy-app-theme: mat-light-theme($candy-app-primary, $candy-app-accent, $candy-app-warn);
+
+// Include theme styles for core and each component used in your app.
+// Alternatively, you can import and @include the theme mixins for each component
+// that you are using.
+@include angular-material-theme($candy-app-theme);
+
+// Modo oscuro
+.darkMode {
+  @include angular-material-theme(mat-dark-theme(mat-palette($mat-grey, A100), $candy-app-accent, $candy-app-warn));
+}
