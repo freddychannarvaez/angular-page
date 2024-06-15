@@ -1,1 +1,9 @@
-<p>brands works!</p>
+<div class="brandsContainer">
+  <h2>Marcas</h2>
+  <span>Estas son algunas de las marcas con las que trabajamos actualmente.</span>
+  <div class="brandsImages">
+    <div *ngFor="let brand of brands" class="brand">
+      <img src="{{brand.logo}}">
+    </div>
+  </div>
+</div>
