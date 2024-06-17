@@ -1,0 +1,30 @@
+.servicesContainer {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  padding-top: 30px;
+
+  .services {
+    display: inherit;
+    flex-direction: row;
+    width: 1080px;
+    max-width: 90%;
+    margin-bottom: 20px;
+    object-fit: cover;
+    
+    img {
+      width: 400px;
+      max-width: 50%;
+      height: 400px;
+    }
+    
+    .serviceInfo {
+      display: inherit;
+      flex-direction: column;
+      align-items: center;
+      justify-content: center;
+      row-gap: 20px;
+      padding: 20px;
+      }
+  }
+}
