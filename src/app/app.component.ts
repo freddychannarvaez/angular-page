@@ -7,10 +7,10 @@ import { Component } from '@angular/core';
 })
 export class AppComponent {
   routes: SiteRoute[] = [
-    {title: 'Home', link: '/'},
-    {title: 'About us', link: '/aboutus'},
-    {title: 'Services', link: '/services'},
-    {title: 'Contact', link: '/contact'},
+    {title: 'Nosotros', link: '/'},
+    {title: 'Servicios', link: '/'},
+    {title: 'Productos', link: '/'},
+    {title: 'Contacto', link: '/contacto'},
   ];
 
 }
