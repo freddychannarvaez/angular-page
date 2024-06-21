@@ -31,6 +31,14 @@ export class ServicesComponent {
   ]
 }
 
+const service1: Service[] = [
+{
+  title: '',
+  description: `En MSA AUTOMATION DEVICES estamos enfocados en el crecimiento de los clientes por lo cual ofrecemos servicios de automatización, instrumentación y control, esto se logra con el esfuerzo de nuestro equipo multidisciplinario profesional en colaboración de los proveedores.`,
+  image: ''
+}
+];
+
 
 interface Service {
   title: string;
