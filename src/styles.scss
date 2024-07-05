@@ -1,10 +1,3 @@
-// @use '@angular/material' as mat;
-
-// @include mat.core();
-/* You can add global styles to this file, and also import other style files */
-html, body { height: 100%; }
-body { margin: 0; font-family: Roboto, "Helvetica Neue", sans-serif; }
-
 /* Primary colors */
 $msa_blue: #00263c;
 $msa_blue_lighter: #007fc8; // contrast also
@@ -16,6 +9,13 @@ $msa_orange_lighter: #ff8d36;
 $msa_orange_darker: #af520a;
 $msa_orange_contrast: #00e28b;
 $msa_orange_complementary: #10a8ff;
+// @use '@angular/material' as mat;
+
+// @include mat.core();
+/* You can add global styles to this file, and also import other style files */
+html, body { height: 100%; color: $msa_blue_darker;}
+body { margin: 0; font-family: Roboto, "Helvetica Neue", sans-serif;}
+
 
 /*----------------------------------------------------------------------------*/
 // Material Theme

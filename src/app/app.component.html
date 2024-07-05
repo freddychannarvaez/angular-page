@@ -23,6 +23,7 @@
 </mat-toolbar>
 
 <mat-sidenav-container>
+  <!-- Sidenav -->
   <mat-sidenav
   mode="side" #sidenav
   position="start"
@@ -43,23 +44,10 @@
   <mat-sidenav-content>
   
     <main>
-       <app-carousel></app-carousel>
-       <app-brands></app-brands>
-       <app-services></app-services>
-       <app-contact>-</app-contact>
+       <router-outlet></router-outlet>
     </main>
     
     <footer class="footer">
-      <!-- <div class="footer-row">
-        <div class="social">
-          <a routerLink="/">
-            <img src="../assets/facebook.svg">
-          </a>
-          <a routerLink="/">
-            <img src="../assets/instagram.svg">
-          </a>
-        </div>
-      </div> -->
       <div class="rights-reserved">
         <span>2024 MSA Automatización</span>
       </div>

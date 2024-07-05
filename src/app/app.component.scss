@@ -68,11 +68,12 @@ mat-toolbar {
     .links-container {
       display: flex;
       flex-direction: row;
-      column-gap: 20px;
+      column-gap: 40px;
       align-items: center;
+      padding-right: 30px;
       
       a {
-        font-size: 18px;
+        font-size: 20px;
         color: white;
         text-decoration: none;
         cursor: pointer;
@@ -99,7 +100,7 @@ a {
 }
 
 .mat-sidenav {
-  background-color: transparent;
+  background-color: $msa_blue;
 }
 
 .nav-list {
@@ -127,17 +128,27 @@ a {
 }
 
 .nav-caption {
-  margin-left: 20px;
+  color: white;
+  font-size: 18px;
+  font-weight: 500;
 }
 
 .list-item {
-  color: #525252;
+  text-align: center;
   height: 50px !important;
-  font-size: 16px;
-  display: flex;
-  flex-direction: row;
 }
 
+
+// ----------------------------------------------------------
+// Main
+// -----------------------------------------------------------
+main {
+  min-height: 827px;
+}
+
+// ----------------------------------------------------------
+// Footer
+// -----------------------------------------------------------
 .footer {
   background-color: $msa_blue;
   bottom: 0px;
@@ -148,7 +159,6 @@ a {
   display: flex;
   flex-direction: column;
   justify-content: center;
-  // justify-content: space-between;
   align-items: center;
   
   &-row {
@@ -158,10 +168,6 @@ a {
     justify-content: center;
     align-items: center;
     width: 120px;
-    
-    // @media screen and (max-width: 768px) {
-    //   flex-direction: column;
-    // }
     
     .social {
       img {
@@ -173,7 +179,8 @@ a {
   }
 
   .rights-reserved {
-    font-size: 16px;
+    font-size: 18px;
+    font-weight: 500;
     color: white;
     width: 240px;
   }
