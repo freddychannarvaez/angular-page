@@ -1,6 +1,7 @@
 // =========================
 // Carousel
 // =========================
+@import '../../styles.scss';
 
 :host {
   flex: 1;
@@ -8,7 +9,7 @@
 
 .carousel {
   position: relative;
-  height: 600px;
+  height: 800px;
   max-height: 100%;
   width: 100%;
   overflow: hidden;
@@ -91,8 +92,8 @@
 /* style the arrows */
 .arrow {
   display: block;
-  border-left: 0.1em solid white;
-  border-bottom: 0.1em solid white;
+  border-left: 0.1em solid $msa_blue;
+  border-bottom: 0.1em solid $msa_blue;
   width: 0.5em;
   height: 0.5em;
 

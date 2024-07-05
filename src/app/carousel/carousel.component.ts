@@ -38,12 +38,12 @@ const fadeOut = animation([
 })
 export class CarouselComponent {
   @Input() slides: Slide[] = [
-    {headline: 'Lorem ipsum dolor sit amet, consectetur adipiscing elit', src: '../../assets/DELTA1.jpg'},
-    {headline: 'Lorem ipsum dolor sit amet, consectetur adipiscing elit', src: '../../assets/DELTA2.jpg'},
-    {headline: 'Lorem ipsum dolor sit amet, consectetur adipiscing elit', src: '../../assets/DONALDSON.png'},
-    {headline: 'Lorem ipsum dolor sit amet, consectetur adipiscing elit', src: '../../assets/PHOENIX.jpg'},
-    {headline: 'Lorem ipsum dolor sit amet, consectetur adipiscing elit', src: '../../assets/SIEMENS.jpg'},
-    {headline: 'Lorem ipsum dolor sit amet, consectetur adipiscing elit', src: '../../assets/TECNOLITE.jpg'}
+    {src: '../../assets/DELTA1.jpg'},
+    {src: '../../assets/DELTA2.jpg'},
+    {src: '../../assets/DONALDSON.png'},
+    {src: '../../assets/PHOENIX.jpg'},
+    {src: '../../assets/SIEMENS.jpg'},
+    {src: '../../assets/TECNOLITE.jpg'}
   ]
   @Input() animationType = 'fade';
 
