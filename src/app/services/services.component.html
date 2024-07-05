@@ -1,10 +1,9 @@
 <div class="servicesContainer">
-  <h1>Nuestros servicios</h1>
-  <div *ngFor="let service of services" class="services">
-    <img src="{{service.image}}">
-    <div class="serviceInfo">
+  <span class="servicesTitle">Nuestros servicios</span>
+  <div class="services">
+    <div class="serviceInfo" *ngFor="let service of services">
+      <img src="{{service.image}}">
       <span>{{service.title}}</span>
-      <span>{{service.description}}</span>
     </div>
   </div>
 </div>

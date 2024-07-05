@@ -1,1 +1,9 @@
-<p>products works!</p>
+<div class="clientsContainer">
+  <span class="clientsTitle">Nuestros clientes</span>
+  <span class="clientsDescription">Clientes que han puesto sus proyectos en NUESTRO EXPERTISSE</span>
+  <div class="clientsImages">
+    <div *ngFor="let client of clients" class="client">
+      <img src="{{client.logo}}">
+    </div>
+  </div>
+</div>
