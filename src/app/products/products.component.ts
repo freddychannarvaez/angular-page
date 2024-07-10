@@ -7,13 +7,13 @@ import { Component } from '@angular/core';
 })
 export class ProductsComponent {
   clients: Client[] = [
-    {title: 'Bachoco', description: '', logo: '../../assets/bachoco.png'},
-    {title: 'Bepensa Motriz', description: '', logo: '../../assets/bepensa motriz.png'},
-    {title: 'Dunosusa', description: '', logo: '../../assets/dunosusa.png'},
-    {title: 'Glacial', description: '', logo: '../../assets/glacial.png'},
-    {title: 'Matpreo', description: '', logo: '../../assets/matpreo.png'},
-    {title: 'Predeco', description: '', logo: '../../assets/predeco.png'},
-    {title: 'Vertical', description: '', logo: '../../assets/vertical.png'},
+    {title: 'Bachoco', description: '', logo: '../../assets/bachoco.avif'},
+    {title: 'Bepensa Motriz', description: '', logo: '../../assets/bepensa motriz.avif'},
+    {title: 'Dunosusa', description: '', logo: '../../assets/dunosusa.avif'},
+    {title: 'Glacial', description: '', logo: '../../assets/glacial.avif'},
+    {title: 'Matpreo', description: '', logo: '../../assets/matpreo.avif'},
+    {title: 'Predeco', description: '', logo: '../../assets/predeco.avif'},
+    {title: 'Vertical', description: '', logo: '../../assets/vertical.avif'},
   ]
 }
 
